@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+nav h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: italic;
+    color: #fff;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #CC6E0C;
+}
+nav h2 span{
+    color: orange;
+    font-style: normal;
+}
+ul li a{
+    margin-left: 30px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: lightgray;
+    font-weight: 600;
+
+}
+ul li a:hover{
+    color: #fff;
+}
+ul li :first-child{
+    margin-left: 0;
+}
+header{
+    height: 100vh;
+    background: #CC6E0C;
+    /* background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../image/pexels-ella-olsson-1640777.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: transparent(0.4); */
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.helf-width{
+    width: 50%;
+}
+ header section h1{
+    font-size: 50px;
+    color: #EBD8C3;
+}
+header section h1 span{
+    color: rgb(239, 159, 11);
+}
+header section img{
+    width: 45%;
+}
+.burger{
+    text-align: center;
+}
+header section p{
+    color: lightgray;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+
+}
+header section button{
+    padding: 15px 40px;
+    background:#FF8C32;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+ header section button:hover{
+    background: orange;
+}
+header section button a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+main{
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(../image/istockphoto-1232401725-170667a-removebg-preview.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main img{
+    width: 100%;
+}
+main h1{
+    font-size: 50px;
+    color:#EBD8C3 ;
+}
+main h1::first-letter{
+    font-size: 70px;
+}
+main h1 span{
+    color: orange;
+}
+main p{
+    color: #FF8C32;
+    font-size: 18px;
+    font-style: italic;
+}
+main button{
+    background-color:#d98e38 ;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 40px;
+
+}
+main button a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+main button:hover{
+    background-color: #824c11;
+    transition: 2s;
+}
+/* grid-header-area */
+.grid-header-area{
+    text-align: center;
+    margin-top: 60px;
+}
+.grid-header-area h1{
+    font-size: 40px;
+    color: rgb(99, 96, 96);
+    margin-bottom: 5px;
+}
+.grid-header-area h1::first-letter{
+    font-size: 50px;
+}
+.grid-header-area > p{
+    font-size: 20px;
+    color: rgb(112, 111, 111);
+    margin-bottom: 40px;
+}
+aside{
+    display: grid;
+    width: 100%;
+    gap: 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
+    grid-template-areas: 
+    "b b b j j j h h h f f f "
+    "c c c n n n p p p s s s"
+    ;
+}
+aside .div1{
+    grid-area:b ;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div2{
+    grid-area: j;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div3{
+    grid-area: h;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div4{
+    grid-area: f;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div5{
+    grid-area: c;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div6{
+    grid-area: n;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div7{
+    grid-area: p;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside .div8{
+    grid-area: s;
+    box-shadow: 1px 1px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside div img{
+    max-width: 100%;
+    height: 250px;
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside div p .fa-star{
+    color:gold;
+
+}
+aside div .shoping{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+aside div .shoping a i{
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+aside div .shoping a .fa-basket-shopping{
+    color: green;
+}
+aside div .shoping a .fa-circle-xmark{
+    color: red;
+}
+aside div h3{
+    font-size: 30px;
+}
+aside div .doller{
+    font-size: 25px;
+    font-weight: bold;
+}
+aside div .doller i{
+    font-size: 25px;
+}
+.registation{
+    margin-top: 20px;
+    width:100%;
+    height: 80vh;
+    background-color: rgb(211, 236, 245);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(211, 235, 245, 0),rgba(2, 219, 244, 0.8));
+}
+.left{
+    width: 50%;
+    /* height: 80vh;
+    background:url(../image/89-891243_fast-food-png-transparent-image-fast-food-background-removebg-preview\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position:center; */
+}
+.left-container{
+    position: relative;
+    top: 30%;
+}
+.left-container h1{
+    font-size: 60px;
+    color: rgba(5, 108, 124, 0.999);
+    font-style: italic;
+}
+.left-container p{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(8, 77, 112);
+}
+.left-container button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius:30px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(8, 119, 167);
+}
+.left-container button a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgrey;
+    font-weight: bold;
+}
+.left-container button:hover{
+    background-color: rgb(4, 55, 94);
+    transition: 2s;
+}
+.left-container button a:hover{
+    color: #fff;
+}
+.right{
+    width: 50%;
+    height: 80vh;
+    background:url(../image/89-891243_fast-food-png-transparent-image-fast-food-background-removebg-preview\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+footer{
+    background-color: black;
+    text-align: center;
+}
+footer h2{
+    color: #fff;
+}
+footer p{
+    color: lightblue;
+}
